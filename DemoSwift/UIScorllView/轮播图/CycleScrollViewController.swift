@@ -1,0 +1,43 @@
+//
+//  CycleScrollViewController.swift
+//  DemoSwift
+//
+//  Created by Arthur on 2017/8/9.
+//  Copyright © 2017年 Arthur. All rights reserved.
+//
+
+import UIKit
+import SDCycleScrollView
+
+class CycleScrollViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        title = "轮播图"
+        self.view.backgroundColor = UIColor.white
+        self.automaticallyAdjustsScrollViewInsets = false
+        
+        //https://github.com/gsdios/SDCycleScrollView
+        
+        let url = "http://f.hiphotos.baidu.com/image/pic/item/203fb80e7bec54e753da379aba389b504fc26a7b.jpg"
+        let banner = SDCycleScrollView(frame: CGRect(x: 0, y: 64, width: KScreenWidth, height: 200), delegate: self, placeholderImage: UIImage(named: "default_lunbo"))
+        banner?.imageURLStringsGroup = [url,url,url,url]
+        banner?.titlesGroup = ["我是第1张图片","我是第2张图片","我是第3张图片","我是第4张图片"]
+        banner?.pageControlAliment = SDCycleScrollViewPageContolAlimentRight
+        self.view.addSubview(banner!)
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+
+}
+
+extension CycleScrollViewController:SDCycleScrollViewDelegate{
+    func cycleScrollView(_ cycleScrollView: SDCycleScrollView!, didSelectItemAt index: Int) {
+        print("dianjile \(index)")
+    }
+}

@@ -1,0 +1,61 @@
+PODS:
+  - Alamofire (4.5.0)
+  - EZSwiftExtensions (1.10)
+  - Kingfisher (3.1.4)
+  - McPicker (0.3.1)
+  - MJRefresh (3.1.12)
+  - PagingMenuController (2.2.0)
+  - PhotoBrowserKit (0.1.2):
+    - Kingfisher (~> 3.1.0)
+  - PPNumberButtonSwift (0.2.0)
+  - Reusable (4.0.0):
+    - Reusable/Storyboard (= 4.0.0)
+    - Reusable/View (= 4.0.0)
+  - Reusable/Storyboard (4.0.0)
+  - Reusable/View (4.0.0)
+  - SDCycleScrollView (1.66):
+    - SDWebImage (~> 4.0.0)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - SnapKit (3.2.0)
+  - SVProgressHUD (2.1.2)
+  - SwiftyJSON (3.1.4)
+  - TLPhotoPicker (1.2.3)
+
+DEPENDENCIES:
+  - Alamofire
+  - EZSwiftExtensions
+  - McPicker
+  - MJRefresh
+  - PagingMenuController
+  - PhotoBrowserKit
+  - PPNumberButtonSwift
+  - Reusable
+  - SDCycleScrollView
+  - SDWebImage
+  - SnapKit
+  - SVProgressHUD
+  - SwiftyJSON (~> 3.1.4)
+  - TLPhotoPicker
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  EZSwiftExtensions: 172160bfb3635161c8b833d9111961ff3e6f517d
+  Kingfisher: 6c67e3e57f2d81a9cfdfa25052cd86f33ceac9bb
+  McPicker: a2d56c55c09e51dab3de266eb973d9c318bb4a4e
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  PagingMenuController: 6176618987bb170096664f2da097313e45ed9c31
+  PhotoBrowserKit: b78915b7c177ba32a0f37807daaed22a8605c8a3
+  PPNumberButtonSwift: 322b76d594ced30aa1a4b57b1424dcc7bc5ade00
+  Reusable: 98e5fff1e0e2e00872199699b276dde08ee56c07
+  SDCycleScrollView: e3ade90e9b3159bec04330b208fbfd81c3f3b671
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  TLPhotoPicker: c8aa7269675b5e528c2a87727030f2bb4e0a542e
+
+PODFILE CHECKSUM: f9b55e45b7fe4361eb95934eb3551d377f67f0e3
+
+COCOAPODS: 1.2.0

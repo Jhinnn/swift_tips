@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="215" id="KGk-i7-Jjw" customClass="MyBookTableViewCell" customModule="DemoSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="215"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="214.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxW-Ro-Rpu">
+                        <rect key="frame" x="8" y="8" width="359" height="56.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ZUD-6A-QDp">
+                        <rect key="frame" x="8" y="72.5" width="359" height="128"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="128" id="PwG-jS-8Id"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="E2t-t4-ApZ">
+                            <size key="itemSize" width="80" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="sxW-Ro-Rpu" secondAttribute="trailing" id="38G-cI-G2V"/>
+                    <constraint firstItem="ZUD-6A-QDp" firstAttribute="top" secondItem="sxW-Ro-Rpu" secondAttribute="bottom" constant="8" id="999-hM-ZAy"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ZUD-6A-QDp" secondAttribute="bottom" constant="6" id="sIg-Ua-pU5"/>
+                    <constraint firstItem="sxW-Ro-Rpu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="xjl-aX-k0A"/>
+                    <constraint firstItem="sxW-Ro-Rpu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="y5u-Ib-ixv"/>
+                    <constraint firstItem="ZUD-6A-QDp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="yl5-25-q1W"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ZUD-6A-QDp" secondAttribute="trailing" id="zvG-Xj-e5x"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="ZUD-6A-QDp" id="3Ua-3X-YAr"/>
+                <outlet property="collectionViewHeight" destination="PwG-jS-8Id" id="ZyT-ko-5rV"/>
+                <outlet property="titleLabel" destination="sxW-Ro-Rpu" id="Wws-BD-9CJ"/>
+            </connections>
+            <point key="canvasLocation" x="36.5" y="131.5"/>
+        </tableViewCell>
+    </objects>
+</document>

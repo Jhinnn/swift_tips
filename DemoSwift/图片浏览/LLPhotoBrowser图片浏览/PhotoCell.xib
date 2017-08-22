@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PhotoCell" customModule="DemoSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="86" height="124"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="86" height="124"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FrY-MF-OO7">
+                        <rect key="frame" x="0.0" y="0.0" width="86" height="124"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="FrY-MF-OO7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4m9-9A-W7L"/>
+                <constraint firstAttribute="trailing" secondItem="FrY-MF-OO7" secondAttribute="trailing" id="e56-w2-Vwq"/>
+                <constraint firstAttribute="bottom" secondItem="FrY-MF-OO7" secondAttribute="bottom" id="fPq-ak-KrN"/>
+                <constraint firstItem="FrY-MF-OO7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wN2-B2-cX1"/>
+            </constraints>
+            <size key="customSize" width="86" height="124"/>
+            <connections>
+                <outlet property="imageView" destination="FrY-MF-OO7" id="vJT-iR-Ujq"/>
+            </connections>
+            <point key="canvasLocation" x="52" y="91"/>
+        </collectionViewCell>
+    </objects>
+</document>
